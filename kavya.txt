@@ -1,0 +1,39 @@
+    
+package javaapplication12;
+
+public class JavaApplication12 {
+      public static double convertCurrency (double amount,double exchRate){
+      double theResult;
+      theResult=amount*exchRate;
+      return  theResult;
+  }
+      
+      public static void printMenu(String currencyName, double exchRate){
+          
+          
+       System.out.println("menu of this restaurant in ("+currencyName +")");
+       System.out.println("");
+       
+        System.out.println("pizza....:" + convertCurrency(1.50,exchRate));
+        System.out.println("coffee....." +convertCurrency(3.25,exchRate));
+        System.out.println("cake....." +convertCurrency(4.15,exchRate));
+        System.out.println("");
+     
+      }
+
+    public static void main(String[] args) {
+        
+
+        printMenu("Rupee",56);
+        printMenu("USD" ,0.76);
+        printMenu("CAD" ,1);
+        
+        
+        
+    }
+    
+    
+      
+    }
+    
+
